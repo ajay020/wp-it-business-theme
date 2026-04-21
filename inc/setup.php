@@ -7,7 +7,8 @@ function it_theme_setup()
     add_theme_support('custom-logo');
 
     register_nav_menus([
-        'primary' => 'Primary Menu'
+        'primary' => 'Primary Menu',
+        'footer_menu'  => 'Footer Menu'
     ]);
 }
 

@@ -21,6 +21,9 @@
                 <?php endif; ?>
             </div>
 
+            <!-- Hamburger Button -->
+            <button class="menu-toggle">☰</button>
+
             <nav class="nav-menu">
                 <?php
                 wp_nav_menu([
