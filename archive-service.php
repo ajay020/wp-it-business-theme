@@ -21,7 +21,17 @@
         <?php endwhile;
         endif; ?>
 
+        <div class="services-cta">
+            <h2>Need help with your project?</h2>
+            <p>Let’s discuss how we can help your business grow.</p>
+
+            <a href="<?php echo site_url('/contact'); ?>" class="btn">
+                Contact Us
+            </a>
+        </div>
+
     </div>
+
 </section>
 
 <?php get_footer(); ?>
