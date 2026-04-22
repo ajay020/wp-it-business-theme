@@ -1,0 +1,51 @@
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.services-grid,
+.testimonials-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Mobile */
+.services-grid,
+.testimonials-grid {
+    grid-template-columns: 1fr;
+}
+
+.hero,
+.services,
+.testimonials {
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+
+    .hero,
+    .services,
+    .testimonials {
+        padding: 80px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+
+    .services-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .services-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
