@@ -13,16 +13,16 @@
             if ($query->have_posts()):
                 while ($query->have_posts()): $query->the_post();
             ?>
+                    <a href="<?php the_permalink(); ?>" class="service-card">
 
-                    <div class="service-card">
                         <?php if ($icon = get_field('service_icon')): ?>
                             <img src="<?php echo $icon; ?>" alt="<?php the_title(); ?>">
                         <?php endif; ?>
 
                         <h3><?php the_title(); ?></h3>
-
                         <p><?php the_field('service_description'); ?></p>
-                    </div>
+
+                    </a>
 
             <?php
                 endwhile;

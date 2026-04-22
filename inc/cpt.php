@@ -9,7 +9,9 @@ function it_register_cpt()
             'singular_name' => 'Service'
         ],
         'public' => true,
+        'publicly_queryable' => true,
         'has_archive' => true,
+        'rewrite' => ['slug' => 'services'],
         'menu_icon' => 'dashicons-hammer',
         'supports' => ['title', 'editor', 'thumbnail'],
     ]);
